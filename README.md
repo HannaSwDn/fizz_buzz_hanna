@@ -28,3 +28,14 @@ but this would return false because we are comparing string to a number:
 ```js
 '5' === 5
 ```
+
+4. Why are we moving this to the top of the if statement:
+```js
+(number % 5 == 0)
+```
+Answer: Because if the first condition of the if statement is true, it doesn't evaluates the else / else if statements. If we would have for example this on the top and it was true, it would never evaluate the other tests:
+```js
+(number % 3 == 0)
+```
+We need the conditions in the if statement in order most rare - least rare.
+<!-- change line 40? -->
