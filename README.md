@@ -18,3 +18,13 @@ To sum up, these two lines creates a variable with the JavaScript file and expor
 let fizzBuzz = new FizzBuzz
 ```
 Answer: Because we want to create a new instance of the FizzBuzz class (we do not want it to have a scope of only one test, because we will use it in more than one tests), it would be unnecessary to add it inside every test that needs an instance of the class.
+
+3. What is the difference between using == and === in JS?
+Answer: The difference is that when you use == you compare the value and not the datatype, but when you use === you compare both the value and the datatype. For example this would return true;
+```js
+'5' == 5
+```
+but this would return false because we are comparing string to a number:
+```js
+'5' === 5
+```
