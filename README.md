@@ -39,3 +39,25 @@ Answer: Because if the first condition of the if statement is true, it doesn't e
 ```
 We need the conditions in the if statement in order most rare - least rare.
 <!-- change line 40? -->
+
+5. What is the difference between feature test and unit test?
+Answer: Unit test are written from the programmers perspective, to test the functionality and backend, and feature test are written to test the user interface (front-end).
+<!-- double-check this answer -->
+
+6. What are expectations in the context of testing?
+
+7. In your README to the best of your knowledge please write a line to line explanation of what is happening in this code
+```js
+document.addEventListener('DOMContentLoaded', () => {
+    let button = document.getElementById('button')
+    let displayDiv = document.getElementById('display_answer')
+    button.addEventListener('click', () =>{
+        let value = document.getElementById('value').value
+        let fizzBuzz = new FizzBuzz
+        let result = fizzBuzz.check(value)
+        displayDiv.innerHTML = result;
+    })
+})
+```
+
+8. In your README to the best of your knowledge please explain what a CDN (Content Delivery Network) is?
