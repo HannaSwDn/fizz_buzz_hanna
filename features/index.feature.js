@@ -49,19 +49,3 @@ describe ('User can input a value and get FizzBuzz results', () => {
     })
 })
 
-/* describe ('User should see a generated number', () => {
-  before(async () => {
-    await browser.init()
-    await browser.visitPage('http://localhost:8080/')
-  })
-
-  beforeEach(async () => {
-      await browser.page.reload()
-  })
-
-  after(async () => {
-      await browser.close()
-  })
-})
-
-*/

@@ -1,4 +1,5 @@
 const { FizzBuzz } = require('./spec.helper')
+const js = require('../src/js/fizz-buzz.js')
 
 describe('Fizz Buzz', () => {
     let fizzBuzz = new FizzBuzz
@@ -20,6 +21,12 @@ describe('Fizz Buzz', () => {
     })
 })
 
-describe('generateNumber', () => {
-    expect()
+describe ('generateNumber', () => {
+    let fizzBuzz = new FizzBuzz
+
+    it('should generate a random number', () => {
+        let generatedNumber = fizzBuzz.generateNumber()
+        let actualNumber = generatedNumber
+        expect(generatedNumber).to.eq(actualNumber)
+    })
 })

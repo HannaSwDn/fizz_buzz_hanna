@@ -9,13 +9,13 @@
 
     <title>FizzBuzz</title>
 </head>
-<body  class="bg-blue-light">
+<body class="bg-green-light">
 
     <p id="display_number"></p>
     <p id="fizz">fizz</p>
     <p id="buzz">buzz</p>
     <p id="fizzbuzz">fizzbuzz</p>
-    <p id="x">X</p>
+    <p id="integer">Integer</p>
     <input type="text" id="value">
     <input type="submit" value="Check" id="button">
     <div id="display_answer"></div>
@@ -26,7 +26,8 @@
         document.addEventListener('DOMContentLoaded', () => {
             let fizz = document.getElementById('fizz')
             let buzz = document.getElementById('buzz')
-            let fizzbuzz = document.getElementById('fizz')
+            let fizzbuzz = document.getElementById('fizzbuzz')
+            let integer = document.getElementById('integer')
             let button = document.getElementById('button')
             let displayDiv = document.getElementById('display_answer')
             button.addEventListener('click', () =>{
