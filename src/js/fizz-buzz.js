@@ -32,7 +32,7 @@ fizzBuzz.generateNumber()
 const checkGuess = () => {
     if (fizzBuzzValue == userGuess) {
         points++
-        document.getElementById('points').innerHTML = `${points} points`
+        pointsParagraph.innerHTML = `${points} points`
         pling.play()
         fizzBuzz.generateNumber()
     } else {
