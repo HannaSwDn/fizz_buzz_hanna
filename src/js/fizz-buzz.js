@@ -1,3 +1,9 @@
+// DOM variables
+
+document.addEventListener('DOMContentLoaded', function() {
+    FizzBuzz()
+})
+
 function FizzBuzz() {
     this.check = (number) => {
         if (number % 15 == 0) {
@@ -11,3 +17,26 @@ function FizzBuzz() {
         }
     }
 }
+
+// function to generate a random fizzbuzz number
+const generateNumber = () => {
+    number = Math.floor(Math.random() * 100 + 1)
+}
+
+let userGuess;
+fizz.addEventListener('click', event => {
+    userGuess = 'fizz'
+    alert(userGuess)
+})
+
+buzz.addEventListener('click', event => {
+    userGuess = 'buzz'
+    alert(userGuess)
+})
+
+fizzbuzz.addEventListener('click', event => {
+    userGuess = 'fizzbuzz'
+    alert(userGuess)
+})
+
+generateNumber()
