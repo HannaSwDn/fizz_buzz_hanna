@@ -1,4 +1,19 @@
-body {
-  background-color: #00b7ff; }
+html {
+  font-size: 10px;
+}
 
-/*# sourceMappingURL=style.css.map */
+.h-50 {
+  height: 50px;
+}
+
+.w-600 {
+  width: 600px;
+}
+
+.text-10xl {
+  font-size: 10rem;
+}
+
+#bar {
+  width: 600px;
+}

@@ -2,6 +2,8 @@
 
 // global variables
 let fizzBuzzValue
+let points
+
 function FizzBuzz() {
     this.check = (number) => {
         if (number % 15 == 0) {
@@ -22,6 +24,12 @@ function FizzBuzz() {
         number = Math.floor(Math.random() * 100 + 1)
         document.getElementById('display_number').innerHTML = number
         fizzBuzz.check(number)
+        bar.style.width = '600px'
+    }
+    this.setWidth = () => {
+        bar.style.transitionDuration = '3s'
+        bar.style.transitionTimingFunction = 'linear'
+        bar.style.width = '0px'
     }
 }
 
@@ -31,8 +39,16 @@ fizzBuzz.generateNumber()
 const checkGuess = () => {
     if (fizzBuzzValue == userGuess) {
         console.log('you guessed right')
+        pling.play()
+        fizzBuzz.generateNumber()
+        bar.style.transitionDuration = '0s'
+        bar.style.width = '600px'
+        setTimeout(function(){
+            fizzBuzz.setWidth()
+        }, 20);
     } else {
         console.log('you guessed wrong')
+        points = 0
     }
 }
 

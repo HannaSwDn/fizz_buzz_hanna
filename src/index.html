@@ -11,19 +11,29 @@
 </head>
 <body class="bg-green-light">
 
-    <p id="display_number"></p>
-    <p id="fizz">fizz</p>
-    <p id="buzz">buzz</p>
-    <p id="fizzbuzz">fizzbuzz</p>
-    <p id="integer">Integer</p>
+    <p id="display_number" class="text-center text-white leading-loose text-10xl"></p>
+
+    <div id="bar_box" class="h-50 w-600 bg-white m-auto">
+        <div id="bar" class="h-50 bg-black"></div>
+    </div>
+
+    <p id="fizz" class="text-center leading-loose text-5xl cursor-pointer">fizz</p>
+    <p id="buzz" class="text-center leading-loose text-5xl cursor-pointer">buzz</p>
+    <p id="fizzbuzz" class="text-center leading-loose text-5xl cursor-pointer">fizzbuzz</p>
+    <p id="integer" class="text-center leading-loose text-5xl cursor-pointer">Integer</p>
     <input type="text" id="value">
     <input type="submit" value="Check" id="button">
     <div id="display_answer"></div>
     
+<!-- Audio -->
+<audio src="audio/pling.mp3" id="pling" />
 <!-- JavaScript -->
 <script src="js/fizz-buzz.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            let barBox = document.getElementById('bar_box')
+            let bar = document.getElementById('bar')
+            let audio = document.getElementById('pling')
             let fizz = document.getElementById('fizz')
             let buzz = document.getElementById('buzz')
             let fizzbuzz = document.getElementById('fizzbuzz')
