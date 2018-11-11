@@ -38,11 +38,10 @@ Answer: Because if the first condition of the if statement is true, it doesn't e
 (number % 3 == 0)
 ```
 We need the conditions in the if statement in order most rare - least rare.
-<!-- change line 40? -->
 
 5. What is the difference between feature test and unit test?
-Answer: Unit test are written from the programmers perspective, to test the functionality and backend, and feature test are written to test the user interface (front-end).
-<!-- double-check this answer -->
+Answer: Unit test are written to test small pieces of code to see if they do what they are supposed to do, for example a function. It makes us write less and more efficient code.
+Feature tests can test much bigger parts of code, they can test a whole application.
 
 6. What are expectations in the context of testing?
 
@@ -61,3 +60,4 @@ document.addEventListener('DOMContentLoaded', () => {
 ```
 
 8. In your README to the best of your knowledge please explain what a CDN (Content Delivery Network) is?
+A CDN is 

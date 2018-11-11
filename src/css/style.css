@@ -2,6 +2,10 @@ html {
   font-size: 10px;
 }
 
+* {
+  font-family: Luckiest Guy;
+}
+
 .h-50 {
   height: 50px;
 }
@@ -10,10 +14,22 @@ html {
   width: 600px;
 }
 
+.text-6xl {
+  font-size: 6rem;
+}
+
 .text-10xl {
   font-size: 10rem;
 }
 
 #bar {
   width: 600px;
+}
+
+.rotate-10 {
+  transform: rotate(10deg);
+}
+
+.rotate--10 {
+  transform: rotate(-10deg);
 }

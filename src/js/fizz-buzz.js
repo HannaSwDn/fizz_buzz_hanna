@@ -1,8 +1,7 @@
-// DOM variables
-
 // global variables
 let fizzBuzzValue
-let points
+let timeLeft = 25
+let points = 0
 
 function FizzBuzz() {
     this.check = (number) => {
@@ -24,18 +23,7 @@ function FizzBuzz() {
         number = Math.floor(Math.random() * 100 + 1)
         document.getElementById('display_number').innerHTML = number
         fizzBuzz.check(number)
-        barWidth600()
     }
-    this.setWidth = () => {
-        bar.style.transitionDuration = '3s'
-        bar.style.transitionTimingFunction = 'linear'
-        bar.style.width = '0px'
-    }
-}
-
-const barWidth600 = () => {
-    bar.style.transitionDuration = '0s'
-    bar.style.width = '600px'
 }
 
 fizzBuzz = new FizzBuzz
@@ -43,17 +31,18 @@ fizzBuzz.generateNumber()
 
 const checkGuess = () => {
     if (fizzBuzzValue == userGuess) {
-        console.log('you guessed right')
+        points++
+        document.getElementById('points').innerHTML = `${points} points`
         pling.play()
         fizzBuzz.generateNumber()
-        barWidth600()
-        setTimeout(function(){
-            fizzBuzz.setWidth()
-        }, 20);
     } else {
-        console.log('you guessed wrong')
-        points = 0
+        gameOver()
     }
+}
+
+const gameOver = () => {
+    points = 0
+    document.getElementById('points').innerHTML = `${points} points`
 }
 
 // event listeners
