@@ -24,13 +24,18 @@ function FizzBuzz() {
         number = Math.floor(Math.random() * 100 + 1)
         document.getElementById('display_number').innerHTML = number
         fizzBuzz.check(number)
-        bar.style.width = '600px'
+        barWidth600()
     }
     this.setWidth = () => {
         bar.style.transitionDuration = '3s'
         bar.style.transitionTimingFunction = 'linear'
         bar.style.width = '0px'
     }
+}
+
+const barWidth600 = () => {
+    bar.style.transitionDuration = '0s'
+    bar.style.width = '600px'
 }
 
 fizzBuzz = new FizzBuzz
@@ -41,8 +46,7 @@ const checkGuess = () => {
         console.log('you guessed right')
         pling.play()
         fizzBuzz.generateNumber()
-        bar.style.transitionDuration = '0s'
-        bar.style.width = '600px'
+        barWidth600()
         setTimeout(function(){
             fizzBuzz.setWidth()
         }, 20);
